@@ -19,6 +19,6 @@ bun test/e2e.ts
 
 The test opens the page in headless Chrome, checks that the remaining time matches the target, that it counts down, that it shows zero after the target, that it fits a 390 px screen, and saves screenshots to `test/shots/`. Set `CHROME` to point at another Chrome binary.
 
-Live: https://7flash.github.io/countdown-timer/
+Live: https://gberlian.github.io/countdown-timer/
 
-To test the live page instead of the local file, pass its address: `bun test/e2e.ts https://7flash.github.io/countdown-timer/`.
+To test the live page instead of the local file, pass its address: `bun test/e2e.ts https://gberlian.github.io/countdown-timer/`.
