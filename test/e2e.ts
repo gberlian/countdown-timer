@@ -5,7 +5,8 @@ import { join } from "path";
 import { pathToFileURL } from "url";
 
 const root = join(import.meta.dir, "..");
-const url = pathToFileURL(join(root, "index.html")).href;
+// Pass a live address (e.g. https://.../) to test the deployed page instead of the local file.
+const url = process.argv[2] || pathToFileURL(join(root, "index.html")).href;
 const shots = join(root, "test", "shots");
 mkdirSync(shots, { recursive: true });
 const chrome = process.env.CHROME || "C:/Program Files/Google/Chrome/Application/chrome.exe";
