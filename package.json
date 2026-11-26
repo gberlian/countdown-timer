@@ -1,0 +1,7 @@
+{
+  "name": "countdown-timer",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "bun test/e2e.ts" },
+  "devDependencies": { "playwright-core": "^1.49.0" }
+}
